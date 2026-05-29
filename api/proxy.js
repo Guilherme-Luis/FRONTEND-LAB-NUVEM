@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  const apiOrigin = process.env.API_ORIGIN || 'http://mini-box-ferreira-api.canadacentral.cloudapp.azure.com'
+  const apiOrigin = process.env.API_ORIGIN || 'http://mercadinho-teste-fukuta.canadacentral.cloudapp.azure.com'
   const environment = process.env.API_ENVIRONMENT || 'production'
   const path = Array.isArray(req.query?.path) ? req.query.path.join('/') : req.query?.path || ''
 
